@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (response.ok) {
         alert("Inquiry submitted successfully!");
-        window.location.href = "/Home.html";
+        window.location.href = "/index.html";
       } else {
         alert(result.message || "Failed to submit inquiry");
       }
