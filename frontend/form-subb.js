@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Sending data:", data);
 
     try {
-      const response = await fetch("http://localhost:3000/submit-journey", {
+      const response = await fetch("https://klar-backend.onrender.com/submit-journey", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
