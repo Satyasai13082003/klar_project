@@ -12,39 +12,69 @@
 </head>
 <body>
 
-    <!-- Top section -->
-    <section>
-    <div class="top-bar">
-        <div class="top-bar-left-container"> <img src="assets/icons/phone-call-logo.png" alt="phone-logo"><span class="top-bar-text"> SPEAK TO US | 9187890345</span></div>
-        <div class="top-bar-right-container">
-            <a class="top-bar-link" href="#">SUBSCRIBE</a>
-            <span class="top-bar-right-dot"></span>
-            <a class="top-bar-link" href="#">BROCHURE</a>
-        </div>
+    <!--Top bar section -->
+<div class="top-bar">
+    <div class="top-bar-left-container">
+        <img src="assets/icons/phone-call-logo.png" alt="phone-logo">
+        <span class="top-bar-text"> SPEAK TO US | 9187890345</span>
     </div>
-    </section>
-     <!-- Navbar -->
-    <section>
-    <div class="navbar-section">
-        <div class="navbar-left">
-           <a class="navbar-left-right-links" href="index.html">Home</a>
-            <a class="navbar-left-right-links" href="Events.html">EVENTS</a>
-            <a class="navbar-left-right-links" href="Travel.html">TRAVEL</a>
-            <a class="navbar-left-right-links" href="Experience.html">EXPERIENCES</a>
-            <a class="navbar-left-right-links" href="Wellness.html">WELLNESS</a>
-        </div>
-
-        <div class="navbar-logo">
-            <img src="assets/icons/klar-logo.png" alt="klar-logo">
-        </div>
-
-        <div class="navbar-right">
-            <a class="navbar-left-right-links " href="About.html">ABOUT</a>
-            <a class="navbar-left-right-links active" href="Contact.html">CONTACT</a>
-            <a class="navbar-left-right-links" href="#">SCHEDULE CONSULTATION</a>
-        </div>
+    <div class="top-bar-right-container">
+        <a class="top-bar-link" href="#">SUBSCRIBE</a>
+        <span class="top-bar-right-dot"></span>
+        <a class="top-bar-link" href="#">BROCHURE</a>
     </div>
-    </section>
+</div>
+
+<!--Navebar section -->
+<div class="navbar-section">
+
+    <div class="navbar-left">
+        <a class="navbar-left-right-links" href="index.html">Home</a>
+        <a class="navbar-left-right-links" href="Events.html">EVENTS</a>
+        <a class="navbar-left-right-links" href="Travel.html">TRAVEL</a>
+        <a class="navbar-left-right-links" href="Experience.html">EXPERIENCES</a>
+        <a class="navbar-left-right-links" href="Wellness.html">WELLNESS</a>
+    </div>
+
+    <div class="navbar-logo">
+        <img src="assets/icons/klar-logo.png" alt="klar-logo">
+    </div>
+
+    <div class="navbar-right">
+        <a class="navbar-left-right-links" href="About.html">ABOUT</a>
+        <a class="navbar-left-right-links" href="Contact.html">CONTACT</a>
+        <a class="navbar-left-right-links" href="#">SCHEDULE CONSULTATION</a>
+    </div>
+
+    
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Events.html">Events</a>
+    <a href="Travel.html">Travel</a>
+    <a href="Experience.html">Experiences</a>
+    <a href="Wellness.html">Wellness</a>
+
+    <hr>
+
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="#">Schedule Consultation</a>
+
+    <hr>
+
+    <a href="#">Subscribe</a>
+    <a href="#">Brochure</a>
+    <a href="tel:9187890345">Speak to Us</a>
+</div>
+
 
     <!--global-presence-section-->
 
@@ -216,6 +246,6 @@
 </footer>
 
 
-
-    </body>
+<script src="form-subb.js"></script>
+</body>
 </html>

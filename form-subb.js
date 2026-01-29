@@ -1,3 +1,12 @@
+function toggleMobileMenu() {
+    document.getElementById("mobileMenu").classList.toggle("active");
+}
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOM fully loaded");
   
