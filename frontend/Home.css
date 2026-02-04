@@ -1067,75 +1067,140 @@ html,body {
 }
 
 
-@media (max-width: 1440px) {
+@media (max-width: 992px) {
 
     
-    .travel-container {
-        width: 100%;
-        height: auto;
-        padding: 80px 24px;
-    }
-
+.travel-container {
     
-    .travel-container-title {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-
-        color: #000000;
-        font-size: clamp(36px, 6vw, 72px);
-        letter-spacing: -0.04em;
-        text-align: center;
-        margin-bottom: 48px;
-        white-space: normal;
-    }
-
+    width: 100%;
+    height: 120vh;
     
-    .travel-container-panels {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-        height: auto;
-    }
-
+    position: relative;
+    background: #FFFFFF;
+    overflow: hidden;
+    box-sizing: border-box;
     
-    .travel-container-panel {
-        height: 420px;
-        border-radius: 20px;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+}
 
+.travel-container-title {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    
    
-    .travel-container-panel::before {
-        background: rgba(0,0,0,0.25);
-    }
+    white-space: nowrap;
+    font-family: 'Montserrat';
+    font-weight: 600;           
+    font-size: 180px;
+    line-height: 1;               
+    letter-spacing: -0.06em;       
+    color: #FFFFFF;
+
+     
+    text-shadow: 
+        0px 4.5px 9px rgba(0, 0, 0, 0.25);
+}
+
+.travel-container-panels {
+    display: flex;
+    height: 100%;
+    gap: 13px; 
+    width:100%;
+}
+
+.travel-container-panel {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.panel-1 {
+    background-image: url("assets/images/thailand.png");
+}
+.panel-2 {
+    background-image: url("assets/images/africa.png");
+}
+.panel-3 {
+    background-image: url("assets/images/swizerland.png");
+}
+.panel-4 {
+    background-image: url("assets/images/scotland.png");
+}
+
+.travel-container-panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+.travel-panel-content {
+  
+
+    position: absolute;        
+    top:360px;         
+    left: 27%;   
+    z-index: 3;
+    max-width: 260px;
+    color: #FFFFFF;
+}
+
+.travel-panel-heading {
+    font-family: 'Montserrat';
+    font-size: 37px;
+    width:400;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+
+.travel-panel-text {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 18px;
+}
+
+.travel-panel-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #D63A6D;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+
+.travel-panel-location {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.travel-panel-location span {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    opacity: 0.85;
+}
+
+.travel-panel-location strong {
+    display: block;
+    font-size: 22px;
+    letter-spacing: 0.15em;
+}
+
 
     
-    .travel-panel-content {
-        top: auto;
-        left: auto;
-        bottom: 100px;
-        padding: 0 20px;
-        max-width: 100%;
-    }
-
-    .travel-panel-heading {
-        font-size: 20px;
-    }
-
-    .travel-panel-text {
-        font-size: 14px;
-        line-height: 22px;
-    }
-
-    
-    .travel-panel-location {
-        bottom: 20px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -1347,99 +1412,200 @@ html,body {
 
 
 
-@media (max-width: 1440px) {
+@media (max-width:768px) {
 
-   
-    .experience-section {
-        width: 100%;
-        height: auto;
-        min-height: auto;
-        padding: 40px 16px 60px;
-    }
 
-   
-    .experience-section-background {
-        position: relative;
-        width: 100%;
-        height: 600px;
-    }
+  .experience-section{
+    width: 100%;
+    
+    min-height:130vh;
+    background-color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+               
+    padding: 0;
 
-    .experience-section-bg-video1 {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+    box-sizing: border-box;
 
-   
-    .experience-section-header {
-        position: relative;
-        top: auto;
-        left: auto;
+}
 
-        width: 100%;
-        margin: 24px auto 0;
-        text-align: center;
-        align-items: center;
-    }
+.experience-section-background {
+    position: absolute;
+    inset: 0;
+    width:100%;
+    height:100%;
+}
+.experience-section-bg-video1 {
+     width: 100%; 
+     height: 100%; 
+     object-fit: cover; }
 
-    .experience-section-header h1 {
-        font-size: clamp(22px, 5vw, 32px);
-        line-height: 1.2;
-        color: #000;
-    }
+.experience-section-bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+    box-shadow: none;
+}
 
-    .experience-section-header p {
-        font-size: clamp(14px, 4vw, 18px);
-        line-height: 1.4;
-        color: #000;
-    }
+.experience-section-header {
+    position: absolute;
+    top: 68.62px;
+    left: 103.5px;
+
+    width: 635.63px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.experience-section-header h1 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    text-transform: lowercase;
+    font-variant: small-caps;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.experience-section-header p {
+    font-family:  sans-serif;
+    font-weight: 500;
+    font-size: 22.5px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.experience-section-thumbnails {
+    position: absolute;
+    top: 61.87px;
+    right: 36px;
+
+    display: flex;
+    gap: 18px;
+
+    width: auto;
+    height: 48.38px;
+
+    z-index: 5;
+}
+
+.experience-section-thumbnails img {
+    height: 48.38px;
+    
+    
+    border-radius: 4.5px;
+}
+
+.experience-section-info-card {
+    position: absolute;
+    top: 533.25px;
+    left: 103.5px;
+
+    width: 568.13px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 27px;
+    border-radius: 27px;
+
+    background:
+        radial-gradient(
+            120% 120% at 0% 0%,
+            rgba(255, 255, 255, 0.25) 0%,
+            rgba(255, 255, 255, 0.08) 45%,
+            rgba(255, 255, 255, 0.02) 100%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(25, 120, 140, 0.85),
+            rgba(10, 70, 90, 0.90)
+        );
 
     
-    .experience-section-thumbnails {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
 
-        margin: 20px auto 0;
-        justify-content: center;
-    }
+.experience-section-location {
+    display: flex;
+    align-items: center;
 
+    gap: 11.25px;
+}
+.experience-section-location img{
+    height:27px;
+    width:27px;
+}
+
+.experience-section-location p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20.25px;
+    line-height: 1;
+    letter-spacing: 0.24em;
+
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.experience-section-info-card h2 {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
     
-    .experience-section-info-card {
-        position: relative;
-        top: auto;
-        left: auto;
 
-        width: 100%;
-        max-width: 520px;
-        margin: 32px auto 0;
+    color: #FFFFFF;
+    margin: 0;
+}
 
-        padding: 22px;
-        border-radius: 22px;
-    }
+.experience-section-description {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.02em;
 
-    .experience-section-location p {
-        font-size: 14px;
-        letter-spacing: 0.18em;
-    }
+    color: #FFFFFF;
+    margin: 0;
+}
 
-    .experience-section-info-card h2 {
-        font-size: clamp(22px, 5vw, 30px);
-        line-height: 1.2;
-    }
+.experience-section-button {
+    width: 220.75px;
+    height: 40px;
 
-    .experience-section-description {
-        font-size: 14px;
-        line-height: 1.4;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11.25px;
 
-    .experience-section-button {
-        width: 100%;
-        height: auto;
-        padding: 14px;
-        justify-content: center;
-    }
+    padding: 18px;
+    border-radius: 4.5px;
+
+    background: linear-gradient(90deg, #D93A6D, #C92C5C);
+
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+   
+   
 }
 
 @media (max-width: 480px) {
