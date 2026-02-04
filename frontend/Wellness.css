@@ -13,7 +13,6 @@ body {
 
 
 
-
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -85,14 +84,21 @@ body {
     background-color: #FFFFFF;
 }
 
+.top-bar,
+.navbar-section {
+    width: 100%;
+    max-width: 100%;
+}
+
+
 .navbar-left,
 .navbar-right {
     display: flex;
-    gap: 27px;
+    gap: 20px;
 }
 
 .navbar-left-right-links {
-    font-size:25px;
+    font-size:22px;
     letter-spacing: 0.11em;
     color: #1F2F5D;
     text-decoration: none;
@@ -195,9 +201,6 @@ body {
         display: flex;
     }
 }
-
-
-
 /* Wellness main container */
 
 
@@ -1043,7 +1046,7 @@ body {
 }
 
 
-@media (max-width: 1199px) {
+@media (max-width:768px) {
 
   .journey-section-form {
     padding: 72px 0;
