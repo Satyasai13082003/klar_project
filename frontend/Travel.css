@@ -100,16 +100,22 @@ body {
 }
 
 .navbar-left-right-links {
-    font-size:22px;
+    font-size:15.75px;
     letter-spacing: 0.11em;
     color: #1F2F5D;
     text-decoration: none;
+    font-weight:500;
 }
 
 .navbar-logo img {
     width: 78px;
     height: auto;
 }
+
+.color{
+  color:#C0265A;
+}
+
 
 
 .hamburger {

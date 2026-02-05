@@ -104,7 +104,7 @@ html,body {
 }
 
 .navbar-left-right-links {
-    font-size:20px;
+   font-size:15.75px;
     letter-spacing: 0.11em;
     color: #1F2F5D;
     text-decoration: none;
@@ -1201,23 +1201,58 @@ html,body {
 }
 
 
+@media (max-width: 480px) {
+
+    
+    .travel-container {
+        height: auto;
+        padding: 40px 16px;
+    }
+
+   
+    .travel-container-title {
+        font-size: 34px;
+        top: 20px;
+        white-space: normal;
+        text-align: center;
+        color: #000;
+    }
+
+    
+    .travel-container-panels {
+        display: grid;                         
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px;
+        height: auto;
+        margin-top: 80px;
+    }
+
+    
+    .travel-container-panel {
+        height: 220px;
+        border-radius: 12px;
+    }
+
+    
+    .travel-panel-content {
+        display: none;
+    }
+
+    
+    .travel-panel-location strong {
+        font-size: 16px;
+    }
+
+    .travel-panel-location span {
+        font-size: 11px;
+    }
+}
+
+
+
     
 }
 
-@media (max-width: 480px) {
-
-    .travel-container-panels {
-        grid-template-columns: 1fr;
-    }
-
-    .travel-container-panel {
-        height: 380px;
-    }
-
-    .travel-container-title {
-        font-size: 32px;
-    }
-}
 
 
 /* Experience Sectin */

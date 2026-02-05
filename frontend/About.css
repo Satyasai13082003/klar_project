@@ -99,10 +99,11 @@ body {
 }
 
 .navbar-left-right-links {
-    font-size:22px;
+    font-size:15.75px;
     letter-spacing: 0.11em;
     color: #1F2F5D;
     text-decoration: none;
+    font-weight:500;
 }
 
 .navbar-logo img {
@@ -122,6 +123,10 @@ body {
     width: 24px;
     height: 2px;
     background-color: #1F2F5D;
+}
+
+.color{
+  color:#C0265A;
 }
 
 
