@@ -79,7 +79,7 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
+    position:relative;
     width: 100%;
     
    

@@ -9,6 +9,12 @@ body {
      font-family: 'Montserrat';
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;   
+}
+
 /* top-section */
 
 
@@ -71,7 +77,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position:fixed;
+    position:relative;
     width: 100%;
     
    
