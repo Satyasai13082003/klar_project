@@ -76,7 +76,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
     width: 100%;
     
    
@@ -651,7 +651,7 @@ body {
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 200px;
+  gap:110px;
 }
 
 
@@ -674,7 +674,8 @@ body {
   top: -60px;
   right: 0;
   display: flex;
-  gap: 12px;
+  text-align:center;
+  gap: 5px;
 }
 
 .klar-slider-controls button {
@@ -1660,13 +1661,12 @@ textarea {
   
 }
 
-
 .footer-top {
   display: flex;
   justify-content:center;
   border-bottom: 0.45px solid #E5E7EB;
   padding-bottom: 24px;
-  gap:300px;
+  gap:180px;
 }
 
 .footer-column {
@@ -1675,7 +1675,6 @@ textarea {
   flex-direction: column;
   gap: 8px;
 }
-
 
 .footer-column h4 {
   font-size: 22px;
@@ -1698,12 +1697,11 @@ textarea {
   font-family: "Montserrat";
 }
 
-
 .footer-middle {
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 400px;
+  gap: 180px;
 }
 
 .footer-brand {
@@ -1720,7 +1718,6 @@ textarea {
   font-size: 14px;
   color: #6B7280;
 }
-
 
 .footer-subscribe {
   position: relative;
@@ -1751,7 +1748,7 @@ textarea {
 
 .footer-description {
   width: 377px;
-  font-size: 27px;
+  font-size: 20px;
   line-height: 38px;
   text-align: center;
 }
@@ -1776,7 +1773,6 @@ textarea {
   height: 20px;
 }
 
-
 .footer-bottom {
   display: flex;
   justify-content:center;
@@ -1788,8 +1784,9 @@ textarea {
 }
 
 .footer-bottom p{
-  font-size:20px;
+  font-size:17px;
 }
+
 @media (max-width: 767px) {
 
   .footer {
@@ -1844,7 +1841,6 @@ textarea {
     width: 100%;
     padding: 40px 32px;
   }
-
 
   .footer-top {
     display: grid;

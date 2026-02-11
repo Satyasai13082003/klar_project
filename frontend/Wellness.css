@@ -72,7 +72,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position:fixed;
     width: 100%;
     
    
@@ -1146,13 +1146,12 @@ body {
   
 }
 
-
 .footer-top {
   display: flex;
   justify-content:center;
   border-bottom: 0.45px solid #E5E7EB;
   padding-bottom: 24px;
-  gap:300px;
+  gap:180px;
 }
 
 .footer-column {
@@ -1161,7 +1160,6 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-
 
 .footer-column h4 {
   font-size: 22px;
@@ -1184,12 +1182,11 @@ body {
   font-family: "Montserrat";
 }
 
-
 .footer-middle {
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 400px;
+  gap: 180px;
 }
 
 .footer-brand {
@@ -1206,7 +1203,6 @@ body {
   font-size: 14px;
   color: #6B7280;
 }
-
 
 .footer-subscribe {
   position: relative;
@@ -1237,7 +1233,7 @@ body {
 
 .footer-description {
   width: 377px;
-  font-size: 27px;
+  font-size: 20px;
   line-height: 38px;
   text-align: center;
 }
@@ -1262,7 +1258,6 @@ body {
   height: 20px;
 }
 
-
 .footer-bottom {
   display: flex;
   justify-content:center;
@@ -1274,7 +1269,7 @@ body {
 }
 
 .footer-bottom p{
-  font-size:20px;
+  font-size:17px;
 }
 
 @media (max-width: 767px) {
@@ -1332,7 +1327,6 @@ body {
     padding: 40px 32px;
   }
 
-
   .footer-top {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -1358,7 +1352,6 @@ body {
     line-height: 32px;
   }
 }
-
 
 
 

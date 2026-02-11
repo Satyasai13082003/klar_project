@@ -72,7 +72,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position:fixed;
     width: 100%;
     
    
@@ -433,7 +433,6 @@ body {
 /* Footer Section */
 
 
-
 .footer {
  
   width:100%;
@@ -446,13 +445,12 @@ body {
   
 }
 
-
 .footer-top {
   display: flex;
   justify-content:center;
   border-bottom: 0.45px solid #E5E7EB;
   padding-bottom: 24px;
-  gap:300px;
+  gap:180px;
 }
 
 .footer-column {
@@ -461,7 +459,6 @@ body {
   flex-direction: column;
   gap: 8px;
 }
-
 
 .footer-column h4 {
   font-size: 22px;
@@ -484,12 +481,11 @@ body {
   font-family: "Montserrat";
 }
 
-
 .footer-middle {
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 400px;
+  gap: 180px;
 }
 
 .footer-brand {
@@ -506,7 +502,6 @@ body {
   font-size: 14px;
   color: #6B7280;
 }
-
 
 .footer-subscribe {
   position: relative;
@@ -537,7 +532,7 @@ body {
 
 .footer-description {
   width: 377px;
-  font-size: 27px;
+  font-size: 20px;
   line-height: 38px;
   text-align: center;
 }
@@ -562,7 +557,6 @@ body {
   height: 20px;
 }
 
-
 .footer-bottom {
   display: flex;
   justify-content:center;
@@ -574,9 +568,8 @@ body {
 }
 
 .footer-bottom p{
-  font-size:20px;
+  font-size:17px;
 }
-
 
 @media (max-width: 767px) {
 
@@ -633,7 +626,6 @@ body {
     padding: 40px 32px;
   }
 
-
   .footer-top {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -659,93 +651,5 @@ body {
     line-height: 32px;
   }
 }
-
-
-
-
-@media (max-width: 767px) {
-
-  .footer {
-    width: 100%;
-    padding: 24px 16px;
-    gap: 36px;
-  }
-
-  
-  .footer-top {
-    flex-direction: column;
-    gap: 24px;
-    padding-bottom: 24px;
-     align-items: center;     
-  text-align: center;
-  }
-
-  .footer-column {
-    width: 100%;
-    align-items: center;
-  }
-
-  .footer-column ul {
-  align-items: center;
-}
-
- 
-  .footer-middle {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
-  }
-
-  .footer-description {
-    width: 100%;
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  
-  .footer-bottom {
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  .footer {
-    width: 100%;
-    padding: 40px 32px;
-  }
-
-
-  .footer-top {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;         
-    column-gap: 64px;
-    row-gap: 32px;
-    text-align: left;   
-  }
-
-  .footer-column {
-    width: 100%;
-  }
-
-  
-  .footer-middle {
-    gap: 24px;
-  }
-
-  .footer-description {
-    width: 100%;
-    max-width: 360px;
-    font-size: 22px;
-    line-height: 32px;
-  }
-}
-
-
-
 
 

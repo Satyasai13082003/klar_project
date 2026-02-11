@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 
 *{
@@ -78,7 +79,7 @@ html,body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
     width: 100%;
     
    
@@ -937,6 +938,8 @@ html,body {
 
 /* Travel-Container */
 
+/* Travel-Container */
+
 .travel-container {
     
     width: 100%;
@@ -1066,6 +1069,8 @@ html,body {
     font-size: 22px;
     letter-spacing: 0.15em;
 }
+
+
 
 
 @media (max-width: 992px) {
@@ -1201,6 +1206,61 @@ html,body {
 }
 
 
+@media (max-width:576px) {
+
+    
+    .travel-container {
+        height: auto;
+        padding: 40px 16px;
+    }
+
+   
+    .travel-container-title {
+        font-size: 30px;
+        top: 20px;
+        white-space: normal;
+        text-align: center;
+        color: #000;
+    }
+
+    
+    .travel-container-panels {
+        display: grid;                         
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px;
+        height: auto;
+        margin-top: 80px;
+    }
+
+    
+    .travel-container-panel {
+        height: 600px;
+        width: ;
+        border-radius: 12px;
+    }
+
+    
+    .travel-panel-content {
+        display: none;
+    }
+
+    
+    .travel-panel-location strong {
+        font-size: 16px;
+    }
+
+    .travel-panel-location span {
+        font-size: 11px;
+    }
+}
+
+
+
+    
+}
+
+
+
 @media (max-width: 480px) {
 
     
@@ -1211,7 +1271,7 @@ html,body {
 
    
     .travel-container-title {
-        font-size: 34px;
+        font-size: 30px;
         top: 20px;
         white-space: normal;
         text-align: center;
@@ -1246,11 +1306,6 @@ html,body {
     .travel-panel-location span {
         font-size: 11px;
     }
-}
-
-
-
-    
 }
 
 
@@ -2125,6 +2180,18 @@ html,body {
     .philosophy-image-wrapper {
         max-width: 420px;
     }
+    .philosophy-description {
+    width:auto;
+
+    font-family: "Sora";
+    font-weight: 400;
+    font-size: 20.25px;
+    line-height: 29.25px;
+    letter-spacing: 0.02em;
+
+    color: #000000;
+    opacity: 0.8;
+}
 
     .philosophy-button {
         width: 100%;
@@ -2354,6 +2421,30 @@ textarea {
   .journey-form-wrapper {
     padding: 22px;
   }
+  
+  
+.journey-heading {
+  font-size: 48.75px;
+  font-weight: 300;
+  line-height: 58.5px;
+  letter-spacing: 2%;
+  color: #1F2F5D;
+}
+
+.journey-heading-highlight {
+font-size:40px;
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #C83063,
+    #C62E61,
+    #C22B5D,
+    #C1275A,
+    #BC2356
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
   .journey-submit {
     font-size: 16px;
@@ -2491,7 +2582,7 @@ textarea {
   justify-content:center;
   border-bottom: 0.45px solid #E5E7EB;
   padding-bottom: 24px;
-  gap:300px;
+  gap:180px;
 }
 
 .footer-column {
@@ -2526,7 +2617,7 @@ textarea {
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 400px;
+  gap: 180px;
 }
 
 .footer-brand {
@@ -2573,7 +2664,7 @@ textarea {
 
 .footer-description {
   width: 377px;
-  font-size: 27px;
+  font-size: 20px;
   line-height: 38px;
   text-align: center;
 }
@@ -2609,7 +2700,7 @@ textarea {
 }
 
 .footer-bottom p{
-  font-size:20px;
+  font-size:17px;
 }
 
 @media (max-width: 767px) {
