@@ -390,6 +390,7 @@ text-transform: uppercase;
 
 .img1, .img2, .img3, .img4 {
   margin: 10px;
+  width:900px;
 }
 
 .img1 img,
@@ -418,7 +419,7 @@ text-transform: uppercase;
 
 
   .img1, .img2, .img3, .img4 {
-    width: 100%;
+    width:100%;
     margin: 10px 0;
   }
 
@@ -496,7 +497,7 @@ text-transform: uppercase;
 
 .process-row {
   display: flex;
-  
+  justify-content:center;
   align-items: center;
   gap: 100px;
 
@@ -588,7 +589,7 @@ text-transform: uppercase;
 .perfection-quote {
   max-width: 1016px;        
   margin: 0 auto;
-
+ 
   font-family: "Playfair Display";
   font-weight: 400;
   font-style: italic;
