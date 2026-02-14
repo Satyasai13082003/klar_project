@@ -3,6 +3,56 @@ function toggleMobileMenu() {
 }
 
 
+/* input element */
+
+function handleChange(select) {
+      const otherInput = document.getElementById("otherInput");
+
+      if (select.value === "others") {
+        otherInput.style.display = "block";
+      } else {
+        otherInput.style.display = "none";
+      }
+    }
+
+
+    function handleBudget(select) {
+      const otherInput = document.getElementById("otherBudget");
+
+      if (select.value === "othersBudget") {
+        otherInput.style.display = "block";
+      } else {
+        otherInput.style.display = "none";
+      }
+    }
+
+
+
+
+
+function openCase() {
+    document.getElementById("caseModal").style.display = "block";
+}
+function closeCase() {
+    document.getElementById("caseModal").style.display = "none";
+}
+
+
+
+
+
+
+function openXP(){
+    document.getElementById("xpModal").style.display="flex";
+}
+function closeXP(){
+    document.getElementById("xpModal").style.display="none";
+}
+function setXP(el){
+    document.getElementById("xpMain").src = el.src;
+}
+
+
 
 
 
@@ -43,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (response.ok) {
         alert("Inquiry submitted successfully!");
         window.location.href = "/index.html";
+
       } else {
         alert(result.message || "Failed to submit inquiry");
       }

@@ -1,0 +1,718 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html,body {
+    margin: 0;
+    font-family: 'Montserrat';
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* top-section */
+
+
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    
+
+    height: 57px;
+    padding: 0 27px;
+
+    background-color: #1F2F5D;
+    
+}
+
+
+.top-bar-left-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-bar img {
+  
+    padding-right: 11.25px;
+    border-right: 1.13px solid #FFFFFF;
+}
+
+.top-bar-text {
+    font-size: 16px;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+}
+
+.top-bar-right-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.top-bar-link {
+    font-size: 16px;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.top-bar-right-dot {
+    width: 4.5px;
+    height: 4.5px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:relative;
+    width: 100%;
+    
+   
+    top: 0;
+    z-index: 1000;
+    padding: 18px 27px;
+    
+
+    background-color: #FFFFFF;
+}
+
+.top-bar,
+.navbar-section {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-left-right-links {
+   font-size:15.75px;
+    letter-spacing: 0.11em;
+    color: #1F2F5D;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    width: 78px;
+    height: auto;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 24px;
+    height: 2px;
+    background-color: #1F2F5D;
+}
+
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #ddd;
+
+     position: fixed;         
+    top: 62px;        
+                
+    left: 0;                   
+    width: 100%;               
+    z-index: 999;              
+}
+
+.mobile-menu a {
+    padding: 12px 0;
+    font-size: 14px;
+   
+    color: #1F2F5D;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+.mobile-menu hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 16px 0;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+
+@media (max-width: 576px) {
+
+    .top-bar {
+        display: none;
+    }
+
+    .navbar-section {
+        width: 100%;
+        padding: 16px 20px;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .top-bar {
+        display: none;
+    }
+
+    .navbar-section {
+        width: 100%;
+        padding: 16px 24px;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        display: none;
+    }
+
+    
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+/* hero section */
+
+.sustain-hero{
+    background:#2c3d6b;
+    color:#ffffff;
+    text-align:center;
+    padding:120px 20px 140px;
+}
+
+.sustain-tag{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:999px;
+    border:1px solid rgba(255,255,255,0.35);
+    font-size:12px;
+    font-family:'Playfair Display';
+    letter-spacing:2px;
+    margin-bottom:30px;
+    opacity:.9;
+}
+
+.sustain-hero h1{
+    font-size:72px;
+    font-family:'Playfair Display';
+    line-height:1.1;
+    margin:0 0 24px;
+    font-weight:600;
+}
+
+.sustain-hero p{
+    font-size:18px;
+    font-family:'Playfair Display';
+    line-height:1.7;
+    max-width:700px;
+    margin:0 auto 40px;
+    opacity:.9;
+}
+
+.sustain-btn{
+    display:inline-block;
+    padding:16px 34px;
+    border-radius:999px;
+    background:#ffffff;
+    color:#2c3d6b;
+    text-decoration:none;
+    font-size:16px;
+    font-family:'Playfair Display';
+    font-weight:600;
+}
+
+@media(max-width:576px){
+
+    .sustain-hero{
+        padding:90px 20px 100px;
+    }
+
+    .sustain-hero h1{
+        font-size:40px;
+        font-family:'Playfair Display';
+    }
+
+    .sustain-hero p{
+        font-size:16px;
+        font-family:'Playfair Display';
+    }
+
+    .sustain-hero p br{
+        display:none;
+    }
+}
+
+.vision-section{
+padding:80px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.vision-container{
+max-width:900px;
+}
+
+.vision-container h2{
+font-size:48px;
+font-family:'Playfair Display';
+color:#2f3e63;
+margin:0 0 24px;
+font-weight:700;
+}
+
+.vision-container p{
+font-size:18px;
+font-family:'Playfair Display';
+line-height:1.8;
+color:#6d7487;
+margin:0;
+}
+
+@media(max-width:576px){
+.vision-section{
+padding:60px 20px;
+}
+
+.vision-container h2{
+font-size:34px;
+font-family:'Playfair Display';
+}
+
+.vision-container p{
+font-size:16px;
+font-family:'Playfair Display';
+}
+}
+
+/* susitablity klar world */
+
+
+.sustainability{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.sustainability h2{
+text-align:center;
+font-size:48px;
+font-family:'Playfair Display';
+margin-bottom:60px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.card{
+background:#ffffff;
+padding:40px;
+border-radius:24px;
+box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h3{
+font-size:28px;
+font-family:'Playfair Display';
+margin:20px 0 10px;
+}
+
+.card p{
+font-size:16px;
+font-family:'Playfair Display';
+line-height:1.7;
+color:#6d7487;
+margin-bottom:16px;
+}
+
+.card ul{
+margin:0;
+padding-left:18px;
+}
+
+.card li{
+margin-bottom:8px;
+font-size:15px;
+font-family:'Playfair Display';
+color:#6d7487;
+}
+
+.icon{
+width:60px;
+height:60px;
+border-radius:50%;
+}
+
+.travel{background:#eef1e6; display: flex; justify-content:center; align-items:center;}
+.events{background:#e6f3f2; display: flex; justify-content:center; align-items:center;}
+.experiences{background:#f7e6ea; display: flex; justify-content:center; align-items:center;}
+.wellness{background:#ece9f7; display: flex; justify-content:center; align-items:center;}
+
+@media(max-width:576px){
+.grid{
+grid-template-columns:1fr;
+}
+
+.sustainability h2{
+font-size:34px;
+font-family:'Playfair Display';
+}
+}
+
+/* our principles section */
+
+.principles-section{
+padding:80px 20px;
+text-align:center;
+}
+
+.principles-header h2{
+font-size:48px;
+font-family:'Playfair Display';
+margin:0 0 10px;
+font-weight:700;
+}
+
+.principles-header p{
+font-size:16px;
+font-family:'Playfair Display';
+color:#8a90a3;
+margin:0 0 60px;
+}
+
+.principles-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+max-width:1100px;
+margin:0 auto;
+}
+
+.principle-card{
+text-align:center;
+padding:10px 20px;
+}
+
+.icon-circle{
+width:90px;
+height:90px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:0 auto 20px;
+background:#ef4444;
+}
+
+.icon-circle img{
+width:36px;
+height:36px;
+}
+
+.principle-card h3{
+font-size:26px;
+font-family:'Playfair Display';
+margin:10px 0;
+font-weight:600;
+}
+
+.principle-card p{
+font-size:15px;
+font-family:'Playfair Display';
+line-height:1.6;
+color:#7b8194;
+max-width:260px;
+margin:0 auto;
+}
+
+@media(max-width:576px){
+.principles-grid{
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.principles-header h2{
+font-size:36px;
+font-family:'Playfair Display';
+}
+}
+
+.impact-section{
+background:linear-gradient(180deg,#2e3f6b 0%,#2a3a63 100%);
+padding:90px 20px;
+text-align:center;
+font-family:'Playfair Display',serif;
+color:#ffffff;
+}
+
+.impact-container{
+max-width:1100px;
+margin:0 auto;
+}
+
+.impact-container h2{
+font-size:48px;
+margin:0 0 10px;
+font-weight:600;
+}
+
+.impact-sub{
+opacity:.7;
+font-size:18px;
+margin-bottom:60px;
+}
+
+.impact-stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:40px;
+}
+
+.impact-item h3{
+font-size:48px;
+margin:0 0 10px;
+font-weight:600;
+}
+
+.impact-item span{
+opacity:.8;
+font-size:16px;
+}
+
+.green{color:#b7d36b;}
+.teal{color:#6fd0c6;}
+.red{color:#ff3b57;}
+.purple{color:#9a86ff;}
+
+@media(max-width:768px){
+.impact-stats{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+}
+
+@media(max-width:576px){
+.impact-stats{
+grid-template-columns:1fr;
+}
+.impact-container h2{
+font-size:36px;
+}
+.impact-item h3{
+font-size:40px;
+}
+}
+
+
+/* initiative section */
+.klar-initiatives-sec{
+padding:90px 20px;
+background:#f6f7fb;
+font-family:'Playfair Display',serif;
+text-align:center;
+}
+
+.klar-initiatives-wrap{
+max-width:1000px;
+margin:0 auto;
+}
+
+.klar-initiatives-title{
+font-size:48px;
+color:#2f3e63;
+margin:0 0 10px;
+}
+
+.klar-initiatives-sub{
+color:#8a8f9c;
+font-size:18px;
+margin-bottom:60px;
+}
+
+.klar-initiative-row{
+display:flex;
+align-items:flex-start;
+gap:24px;
+text-align:left;
+padding:20px 0;
+}
+
+.klar-initiative-badge{
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+font-weight:600;
+flex-shrink:0;
+}
+
+.klar-badge-green{
+background:#eef3e4;
+color:#9fb55c;
+}
+
+.klar-badge-teal{
+background:#e3f2f1;
+color:#62bdb5;
+}
+
+.klar-badge-rose{
+background:#fde6ea;
+color:#e35b6d;
+}
+
+.klar-badge-purple{
+background:#ecebfa;
+color:#7b74d6;
+}
+
+.klar-initiative-text h3{
+margin:0 0 8px;
+font-size:26px;
+color:#2f3e63;
+}
+
+.klar-initiative-text p{
+margin:0;
+color:#6d7487;
+font-size:16px;
+line-height:1.7;
+}
+
+.klar-initiative-line{
+height:1px;
+background:#e5e7ef;
+margin:10px 0;
+}
+
+@media(max-width:576px){
+.klar-initiatives-title{
+font-size:36px;
+}
+
+.klar-initiative-row{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.klar-initiative-badge{
+width:50px;
+height:50px;
+font-size:16px;
+}
+}
+
+/* bottom section */
+
+.klar-sustain-cta{
+background:#2f3f6a;
+padding:100px 20px;
+text-align:center;
+font-family:'Playfair Display',serif;
+}
+
+.klar-sustain-inner{
+max-width:900px;
+margin:0 auto;
+}
+
+.klar-sustain-title{
+color:#ffffff;
+font-size:52px;
+margin:0 0 18px;
+font-weight:600;
+}
+
+.klar-sustain-text{
+color:rgba(255,255,255,0.75);
+font-size:18px;
+line-height:1.7;
+margin-bottom:40px;
+}
+
+.klar-sustain-actions{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.klar-btn-primary{
+background:#e9e9e9;
+color:#9db35f;
+padding:16px 36px;
+border-radius:40px;
+font-size:16px;
+text-decoration:none;
+display:inline-block;
+}
+
+.klar-btn-outline{
+border:1.5px solid rgba(255,255,255,0.8);
+color:#ffffff;
+padding:16px 36px;
+border-radius:40px;
+font-size:16px;
+text-decoration:none;
+display:inline-block;
+}
+
+@media(max-width:768px){
+.klar-sustain-title{
+font-size:36px;
+}
+
+.klar-sustain-text{
+font-size:16px;
+}
+
+.klar-btn-primary,
+.klar-btn-outline{
+width:100%;
+max-width:280px;
+}
+}
+

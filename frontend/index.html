@@ -544,24 +544,46 @@
       <div class="form-row">
         <div class="form-group">
           <label>Interest <span class="required-star">*</span></label>
-          <select name="interest">
+          <select name="interest" onchange="handleChange(this)">
             <option value="">Select</option>
             <option value="Travel">Travel</option>
-            <option value="Adventure">adventure</option>
-            <option value="Himalayas">Homalayas</option>
-
+            <option value="Visa">Visa</option>
+            <option value="Event">Event</option>
+            <option value="Hotel">Hotel</option>
+            <option value="Tour">Tour</option>
+            <option type="text" value="others">Others</option>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
           </select>
+           <input
+                type="text"
+                id="otherInput"
+                placeholder="Please specify"
+                style="display:none;"
+                name="interestOther"
+              />
+
         </div>
+
+        
+ 
 
         <div class="form-group">
           <label>Budget Range</label>
-          <select name="budget">
+          <select name="budget" onchange="handleBudget(this)">
             <option value="">Select</option>
-            <option value="Low">Low</option>
-           <option value="Medium">Medium</option>
-           <option value="High">High</option>
-
+            <option value="Low">0-10K</option>
+           <option value="Medium">10-50k</option>
+           <option value="High">50-1lakh</option>
+           <option value="High">1Lakh-2.5Lakh</option>
+          <option value="High">2.5Lakh-5Lakh</option>
+          <option type="text" value="othersBudget">Others</option>
           </select>
+          <input
+                type="text"
+                id="otherBudget"
+                placeholder="Budget Range"
+                style="display:none;"
+                name="budgetOther"
+              />
         </div>
       </div>
 

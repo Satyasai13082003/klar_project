@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Experience-gallery.css">
+    <link rel="stylesheet" href="fonts/gambarino.css">
+</head>
+<body>
+    
+
+   <!--Top bar section -->
+<div class="top-bar">
+    <div class="top-bar-left-container">
+        <img src="assets/icons/phone-call-logo.png" alt="phone-logo">
+        <span class="top-bar-text"> SPEAK TO US | 9187890345</span>
+    </div>
+    <div class="top-bar-right-container">
+        <a class="top-bar-link" href="#">SUBSCRIBE</a>
+        <span class="top-bar-right-dot"></span>
+        <a class="top-bar-link" href="#">BROCHURE</a>
+        <a href=""></a>
+    </div>
+</div>
+
+<!--Navebar section -->
+<div class="navbar-section">
+
+    <div class="navbar-left">
+       
+        <a class="navbar-left-right-links" href="Events.html">EVENTS</a>
+        <a class="navbar-left-right-links" href="Travel.html">TRAVEL</a>
+        <a class="navbar-left-right-links" href="Experience.html">EXPERIENCES</a>
+        <a class="navbar-left-right-links" href="Wellness.html">WELLNESS</a>
+    </div>
+
+    <div class="navbar-logo">
+ 
+      <a href="index.html">
+        <img src="assets/icons/klar-logo.png" alt="klar-logo">
+      </a>
+        
+    </div>
+
+    <div class="navbar-right">
+        <a class="navbar-left-right-links" href="About.html">ABOUT</a>
+        <a class="navbar-left-right-links" href="Contact.html">CONTACT</a>
+        <a class="navbar-left-right-links" href="#">SCHEDULE CONSULTATION</a>
+    </div>
+
+    
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Events.html">Events</a>
+    <a href="Travel.html">Travel</a>
+    <a href="Experience.html">Experiences</a>
+    <a href="Wellness.html">Wellness</a>
+
+    <hr>
+
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="#">Schedule Consultation</a>
+
+    <hr>
+
+    <a href="#">Subscribe</a>
+    <a href="#">Brochure</a>
+    <a href="tel:9187890345">Speak to Us</a>
+</div>
+
+<!--Hero section-->
+
+<section class="gallery-hero">
+    <a href="#" class="back">← Back to Home</a>
+
+    <h1>Experience Gallery</h1>
+
+    <p>
+        A visual journey through our most extraordinary moments, destinations, and<br>
+        curated luxury experiences around the world.
+    </p>
+
+    <div class="filters">
+        <button class="active">All</button>
+        <button>Travel</button>
+        <button>Events</button>
+        <button>Experiences</button>
+        <button>Wellness</button>
+    </div>
+</section>
+
+<!--Main section-->
+<section class="gallery-cards">
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/meditirian-image-1.jpg')">
+            <span class="badge">Yacht Experiences</span>
+        </div>
+        <div class="content">
+            <h3>Mediterranean Sunset Voyage</h3>
+            <p>Private yacht charter through the azure waters of the Aegean Sea</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/food\ dining.jpg')">
+            <span class="badge">Culinary</span>
+        </div>
+        <div class="content">
+            <h3>Michelin Star Dining</h3>
+            <p>Exclusive chef's table experience at a three-star restaurant</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/travel-avatlion.jpg')">
+            <span class="badge">Travel</span>
+        </div>
+        <div class="content">
+            <h3>Private Aviation</h3>
+            <p>Fly in ultimate comfort and privacy to any destination worldwide</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/wellnes-saturay-image-4.jpg')">
+            <span class="badge">Wellness</span>
+        </div>
+        <div class="content">
+            <h3>Wellness Sanctuary</h3>
+            <p>Rejuvenating spa treatments in tropical paradise</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/capidoca\ skies.jpg')">
+            <span class="badge">Adventure</span>
+        </div>
+        <div class="content">
+            <h3>Cappadocia Skies</h3>
+            <p>Hot air balloon rides over fairy chimneys at sunrise</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/celebrations.jpg')">
+            <span class="badge">Events</span>
+        </div>
+        <div class="content">
+            <h3>Champagne Celebrations</h3>
+            <p>Exclusive champagne tastings and high-society gatherings</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/infinity-pool.jpg')">
+            <span class="badge">Resorts</span>
+        </div>
+        <div class="content">
+            <h3>Infinity Pool Bliss</h3>
+            <p>Overwater villas with breathtaking ocean views</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/Northern-lights.jpg')">
+            <span class="badge">Natural Wonders</span>
+        </div>
+        <div class="content">
+            <h3>Northern Lights</h3>
+            <p>Witness the aurora borealis in remote luxury lodges</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/parisian\ nights.jpg')">
+            <span class="badge">City Experiences</span>
+        </div>
+        <div class="content">
+            <h3>Parisian Nights</h3>
+            <p>Private after-hours tours of iconic landmarks</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/santorini-sunsets.jpg')">
+            <span class="badge">Romantic Escapes</span>
+        </div>
+        <div class="content">
+            <h3>Santorini Sunsets</h3>
+            <p>Cliffside villas overlooking the caldera at golden hour</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/dubai-image.jpg')">
+            <span class="badge">Luxury Hotels</span>
+        </div>
+        <div class="content">
+            <h3>Dubai Opulence</h3>
+            <p>Seven-star accommodations in the world's most lavish hotels</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card" onclick="openXP()">
+        <div class="img" style="background-image:url('assets/images/parisian\ nights.jpg')">
+            <span class="badge">Beach Destinations</span>
+        </div>
+        <div class="content">
+            <h3>Tropical Paradise</h3>
+            <p>Pristine beaches and crystal-clear waters in secluded luxury</p>
+            <div class="bottom">
+                <span class="location">Paris, France</span>
+                <a href="#">View Gallery →</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="xp-modal" id="xpModal">
+
+    <div class="xp-wrapper">
+
+        <div class="xp-left">
+            <span class="xp-count">1 / 6</span>
+            <img src="assets/images/meditirian-image-1.jpg" id="xpMain">
+        </div>
+
+        <div class="xp-right">
+
+            <div class="xp-head">
+                <span class="xp-type">Experiences</span>
+                <button class="xp-close" onclick="closeXP()">×</button>
+            </div>
+
+            <h2 class="xp-title">Mediterranean Sunset Voyage</h2>
+            <p class="xp-desc">Private yacht charter through the azure waters of the Aegean Sea</p>
+            <span class="xp-place">Greek Islands</span>
+
+            <h4 class="xp-gallery-title">GALLERY (6 IMAGES)</h4>
+
+            <div class="xp-thumbs">
+                <img src="assets/images/meditirian-image-1.jpg" onclick="setXP(this)">
+                <img src="assets/images/santorini-sunsets.jpg" onclick="setXP(this)">
+                <img src="assets/images/dubai-image.jpg" onclick="setXP(this)">
+                <img src="assets/images/dubai-image.jpg" onclick="setXP(this)">
+                <img src="assets/images/dubai-image.jpg" onclick="setXP(this)">
+                <img src="assets/images/dubai-image.jpg" onclick="setXP(this)">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<section class="own-exp">
+    <h2>Create Your Own Experience</h2>
+    <p>
+        Let us curate a bespoke journey tailored to your dreams. Every moment,<br>
+        every detail, crafted to perfection.
+    </p>
+
+    <div class="own-actions">
+        <a href="#" class="own-btn primary">Start Planning</a>
+        <a href="#" class="own-btn outline">Read Stories</a>
+    </div>
+</section>
+
+
+<script src="form-subb.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="Careers.css">
+    <link rel="stylesheet" href="fonts/gambarino.css">
+</head>
+<body>
+    
+
+   <!--Top bar section -->
+<div class="top-bar">
+    <div class="top-bar-left-container">
+        <img src="assets/icons/phone-call-logo.png" alt="phone-logo">
+        <span class="top-bar-text"> SPEAK TO US | 9187890345</span>
+    </div>
+    <div class="top-bar-right-container">
+        <a class="top-bar-link" href="#">SUBSCRIBE</a>
+        <span class="top-bar-right-dot"></span>
+        <a class="top-bar-link" href="#">BROCHURE</a>
+        <a href=""></a>
+    </div>
+</div>
+
+<!--Navebar section -->
+<div class="navbar-section">
+
+    <div class="navbar-left">
+       
+        <a class="navbar-left-right-links" href="Events.html">EVENTS</a>
+        <a class="navbar-left-right-links" href="Travel.html">TRAVEL</a>
+        <a class="navbar-left-right-links" href="Experience.html">EXPERIENCES</a>
+        <a class="navbar-left-right-links" href="Wellness.html">WELLNESS</a>
+    </div>
+
+    <div class="navbar-logo">
+ 
+      <a href="index.html">
+        <img src="assets/icons/klar-logo.png" alt="klar-logo">
+      </a>
+        
+    </div>
+
+    <div class="navbar-right">
+        <a class="navbar-left-right-links" href="About.html">ABOUT</a>
+        <a class="navbar-left-right-links" href="Contact.html">CONTACT</a>
+        <a class="navbar-left-right-links" href="#">SCHEDULE CONSULTATION</a>
+    </div>
+
+    
+    <div class="hamburger" onclick="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="Events.html">Events</a>
+    <a href="Travel.html">Travel</a>
+    <a href="Experience.html">Experiences</a>
+    <a href="Wellness.html">Wellness</a>
+
+    <hr>
+
+    <a href="About.html">About</a>
+    <a href="Contact.html">Contact</a>
+    <a href="#">Schedule Consultation</a>
+
+    <hr>
+
+    <a href="#">Subscribe</a>
+    <a href="#">Brochure</a>
+    <a href="tel:9187890345">Speak to Us</a>
+</div>
+
+<!--case study-->
+<div class="case-hero">
+    <a href="#" class="back">← Back to Home</a>
+
+    <h1 class="case-title">Case Studies</h1>
+    <p class="case-sub">
+        Discover how we've transformed dreams into reality for<br>
+        our discerning clients across the globe.
+    </p>
+
+    <div class="case-stats">
+        <div class="stat">
+            <h2>250+</h2>
+            <span>PROJECTS DELIVERED</span>
+        </div>
+        <div class="stat">
+            <h2>98%</h2>
+            <span>CLIENT SATISFACTION</span>
+        </div>
+        <div class="stat">
+            <h2>50+</h2>
+            <span>COUNTRIES</span>
+        </div>
+        <div class="stat">
+            <h2>15+</h2>
+            <span>YEARS EXPERIENCE</span>
+        </div>
+    </div>
+</div>
+
+<!--Cards section-->
+
+<div class="cases">
+
+    <div class="filters">
+        <button class="active">All</button>
+        <button>Travel</button>
+        <button>Events</button>
+        <button>Experiences</button>
+        <button>Wellness</button>
+    </div>
+
+    <hr>
+
+    <div class="cases-grid">
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/maldives-image-1.jpg')">
+                <span class="tag">Travel</span>
+                <div class="overlay">
+                    <small>Maldives · 2024</small>
+                    <h3>Maldives Sanctuary: A Private Island Experience</h3>
+                </div>
+            </div>
+            <p>Create an unforgettable anniversary celebration for a couple seeking complete privacy and luxury</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/royal-palace-image2.jpg')">
+                <span class="tag">Events</span>
+                <div class="overlay">
+                    <small>Udaipur, India · 2024</small>
+                    <h3>Royal Palace Wedding: A Fairy Tale Come True</h3>
+                </div>
+            </div>
+            <p>Orchestrate a three-day destination wedding for 200 guests at a historic Indian palace with</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/safari-image-3.jpg')">
+                <span class="tag">Experiences</span>
+                <div class="overlay">
+                    <small>Kenya & Tanzania · 2024</small>
+                    <h3>Safari of a Lifetime: Conservation & Luxury</h3>
+                </div>
+            </div>
+            <p>Design a 14-day safari experience that balances luxury with meaningful conservation engagement</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/alpine-wellness-image-4.jpg')">
+                <span class="tag">Wellness</span>
+                <div class="overlay">
+                    <small>Zermatt, Switzerland · 2024</small>
+                    <h3>Alpine Wellness Retreat: Corporate Transformation</h3>
+                </div>
+            </div>
+            <p>Create a week-long executive wellness retreat for 30 C-suite leaders focused on mental health, team</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/global-innovation-image5.jpg')">
+                <span class="tag">Events</span>
+                <div class="overlay">
+                    <small>Dubai, UAE · 2023</small>
+                    <h3>Global Innovation Summit: Redefining Conferences</h3>
+                </div>
+            </div>
+            <p>Host a 3-day innovation summit for 500 global leaders with cutting-edge technology</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/bali-image6.jpg')">
+                <span class="tag">Wellness</span>
+                <div class="overlay">
+                    <small>Ubud, Bali · 2023</small>
+                    <h3>Bali Soul Journey: Personal Transformation</h3>
+                </div>
+            </div>
+            <p>Design a personalized 3-week wellness journey for an executive experiencing burnout and seeking life</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/maldives-image-1.jpg')">
+                <span class="tag">Travel</span>
+                <div class="overlay">
+                    <small>Maldives · 2024</small>
+                    <h3>Maldives Sanctuary: A Private Island Experience</h3>
+                </div>
+            </div>
+            <p>Create an unforgettable anniversary celebration for a couple seeking complete privacy and luxury</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/royal-palace-image2.jpg')">
+                <span class="tag">Events</span>
+                <div class="overlay">
+                    <small>Udaipur, India · 2024</small>
+                    <h3>Royal Palace Wedding: A Fairy Tale Come True</h3>
+                </div>
+            </div>
+            <p>Orchestrate a three-day destination wedding for 200 guests at a historic Indian palace with</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/safari-image-3.jpg')">
+                <span class="tag">Experiences</span>
+                <div class="overlay">
+                    <small>Kenya & Tanzania · 2024</small>
+                    <h3>Safari of a Lifetime: Conservation & Luxury</h3>
+                </div>
+            </div>
+            <p>Design a 14-day safari experience that balances luxury with meaningful conservation engagement</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/alpine-wellness-image-4.jpg')">
+                <span class="tag">Wellness</span>
+                <div class="overlay">
+                    <small>Zermatt, Switzerland · 2024</small>
+                    <h3>Alpine Wellness Retreat: Corporate Transformation</h3>
+                </div>
+            </div>
+            <p>Create a week-long executive wellness retreat for 30 C-suite leaders focused on mental health, team</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/global-innovation-image5.jpg')">
+                <span class="tag">Events</span>
+                <div class="overlay">
+                    <small>Dubai, UAE · 2023</small>
+                    <h3>Global Innovation Summit: Redefining Conferences</h3>
+                </div>
+            </div>
+            <p>Host a 3-day innovation summit for 500 global leaders with cutting-edge technology</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+        <div class="case-card" onclick="openCase()">
+            <div class="image" style="background-image:url('assets/images/bali-image6.jpg')">
+                <span class="tag">Wellness</span>
+                <div class="overlay">
+                    <small>Ubud, Bali · 2023</small>
+                    <h3>Bali Soul Journey: Personal Transformation</h3>
+                </div>
+            </div>
+            <p>Design a personalized 3-week wellness journey for an executive experiencing burnout and seeking life</p>
+            <a href="#">View Full Case Study →</a>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="case-modal" id="caseModal">
+
+    <div class="case-wrapper">
+
+        <div class="hero" style="background-image:url('assets/images/royal-palace-image2.jpg')">
+            <div class="nav">
+                <div class="logo">KLAR</div>
+                <div class="close" onclick="closeCase()">×</div>
+            </div>
+
+            <div class="hero-content">
+                <span class="tag">TRAVEL</span>
+                <h1>Maldives Sanctuary:<br>A Private Island Experience</h1>
+
+                <div class="meta">
+                    <div><small>CLIENT</small><p>Private Client</p></div>
+                    <div><small>LOCATION</small><p>Maldives</p></div>
+                    <div><small>YEAR</small><p>2024</p></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+
+            <div class="two-col">
+                <div>
+                    <h3>The Challenge</h3>
+                    <p>Create an unforgettable anniversary celebration for a couple seeking complete privacy and luxury in a tropical paradise.</p>
+                </div>
+                <div>
+                    <h3>Our Solution</h3>
+                    <p>We curated a 10-day private island experience featuring overwater villas, personal chefs, private yacht excursions, and underwater dining experiences.</p>
+                </div>
+            </div>
+
+
+            <div class="results">
+                <span class="label">IMPACT</span>
+                <h2>The Results</h2>
+                <p class="sub">Measurable outcomes that exceeded expectations</p>
+
+                <div class="cards">
+                    <div class="r-card"><b>1</b><p>100% client satisfaction with zero compromises</p></div>
+                    <div class="r-card"><b>2</b><p>Featured in Luxury Travel Magazine</p></div>
+                    <div class="r-card"><b>3</b><p>Client returned for second booking within 6 months</p></div>
+                </div>
+            </div>
+
+
+            <div class="quote">
+                <p>KLAR transformed our anniversary into something beyond our wildest dreams. Every detail was perfection.</p>
+                <span>Mr. & Mrs. Anderson</span>
+            </div>
+
+
+            <div class="cta">
+                <h2>Ready to Create Your Story?</h2>
+                <p>Let's collaborate to transform your vision into an extraordinary reality.</p>
+                <div class="cta-btns">
+                    <a class="btn primary" href="#">Start Your Journey</a>
+                    <a class="btn outline" href="#">View All Cases</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <footer class="footer">
+            <span>© 2025 KLAR World. All rights reserved.</span>
+            <div class="links">
+                <a href="#">Travels</a>
+                <a href="#">Experiences</a>
+                <a href="#">Wellness</a>
+                <a href="#">Events</a>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!--Bottom section-->
+
+<div class="success-cta">
+    <h2>Ready to Create Your Success Story?</h2>
+    <p>
+        Let's collaborate to bring your vision to life. Whether it's a destination wedding,<br>
+        corporate event, or transformative journey, we're here to exceed your expectations.
+    </p>
+
+    <div class="success-buttons">
+        <a href="#" class="btn primary">Start Your Journey</a>
+        <a href="#" class="btn outline">Read Our Stories</a>
+    </div>
+</div>
+
+
+
+<script src="form-subb.js"></script>
+</body>
+</html>

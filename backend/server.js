@@ -25,6 +25,11 @@ const JourneySchema = new mongoose.Schema({
   budget: String,
   timeline: String,
   vision: String,
+  inquirySource: {
+  type: String,
+  default: "klar_world_website"
+},
+
   createdAt: {
     type: Date,
     default: Date.now
@@ -44,6 +49,8 @@ app.post("/submit-journey", async (req, res) => {
 
     const journey = new Journey(req.body);
     await journey.save();
+
+    
 
     res.status(201).json({
       success: true,
